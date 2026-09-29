@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tabumaru Privacy Policy</title>
+<style>
+  :root { --fg: #3a3340; --sub: #6b6170; --accent: #ff7a59; --bg: #fffaf3; --card: #ffffff; --line: #f0e4d8; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif; line-height: 1.75; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  nav { display: flex; gap: 12px; margin-bottom: 24px; }
+  nav a { color: var(--accent); font-weight: 700; text-decoration: none; }
+  section { background: var(--card); border: 2px solid var(--line); border-radius: 16px; padding: 8px 24px 16px; margin-bottom: 24px; }
+  h1 { font-size: 26px; margin: 8px 0 4px; }
+  h2 { font-size: 18px; margin: 24px 0 8px; }
+  p, li { font-size: 15px; }
+  .updated { color: var(--sub); font-size: 14px; margin-top: 0; }
+  code { background: #f6efe7; border-radius: 6px; padding: 1px 6px; font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#en">English</a><a href="#ja">日本語</a></nav>
+
+<section id="en" lang="en">
+<h1>Tabumaru Privacy Policy</h1>
+<p class="updated">Last updated: September 29, 2026</p>
+
+<p>Tabumaru is a Chrome extension that shows your open tabs and tab groups in a side panel. This policy explains what information Tabumaru handles and how.</p>
+
+<h2>Summary</h2>
+<ul>
+  <li>Tabumaru does <strong>not</strong> collect, send, sell, or share any of your data.</li>
+  <li>Everything works inside your browser. Tabumaru has no servers, no analytics, and no ads, and it does not load any code from outside the extension.</li>
+</ul>
+
+<h2>Information Tabumaru uses on your device</h2>
+<ul>
+  <li><strong>Your open tabs and tab groups</strong> (titles, URLs, site icons, group names and colors) are read through Chrome's extension APIs only to show, search, switch, move, close, snooze and put tabs to sleep when you use these features. This information is not saved or sent anywhere.</li>
+  <li><strong>Your settings</strong> (language, color theme, auto-sleep and screenshot preview settings) are saved in Chrome's local extension storage on your device.</li>
+  <li><strong>Snoozed tabs</strong>: when you snooze a tab, its title, URL and wake-up time are saved in Chrome's local extension storage until the tab reopens or you cancel it.</li>
+  <li><strong>Auto-sleep</strong>: to know which tabs have been inactive, Tabumaru keeps the time each tab was last used in Chrome's session storage. It is cleared when you close Chrome.</li>
+  <li><strong>Screenshot preview (optional, off by default)</strong>: if you turn it on, Tabumaru takes a small screenshot of the tab you are viewing, so it can show it when you hover over that tab in the list. These thumbnails are kept only in Chrome's session storage on your device, are deleted when the tab is closed or when you close Chrome, and never leave your device. Tabumaru does not read or change the content of web pages.</li>
+</ul>
+
+<h2>Permissions</h2>
+<table>
+  <tr><th>Permission</th><th>Why Tabumaru needs it</th></tr>
+  <tr><td><code>tabs</code>, <code>tabGroups</code>, <code>favicon</code></td><td>List your tabs and tab groups with their site icons, and switch, move, close, snooze or put tabs to sleep when you ask.</td></tr>
+  <tr><td><code>storage</code></td><td>Save your settings and snoozed tabs on your device.</td></tr>
+  <tr><td><code>sidePanel</code></td><td>Show the tab list in Chrome's side panel.</td></tr>
+  <tr><td><code>alarms</code></td><td>Check once a minute whether a snoozed tab should reopen, and (only if auto-sleep is on) whether a tab should be put to sleep.</td></tr>
+  <tr><td><code>contextMenus</code></td><td>Add "Open Tabumaru" to the right-click menu.</td></tr>
+  <tr><td>Access to all sites (optional)</td><td>Requested only when you turn on screenshot preview, and used only to take the thumbnails described above. The permission is removed when you turn the feature off.</td></tr>
+</table>
+
+<h2>Deleting your data</h2>
+<p>You can cancel snoozed tabs and turn off features at any time. Removing Tabumaru from Chrome deletes all data it has stored.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the new version will be posted on this page with a new "Last updated" date.</p>
+</section>
+
+<section id="ja" lang="ja">
+<h1>Tabumaru（タブまる）プライバシーポリシー</h1>
+<p class="updated">最終更新日：2026年9月29日</p>
+
+<p>Tabumaru（タブまる）は、開いているタブとタブグループをサイドパネルに一覧表示する Chrome 拡張機能です。このポリシーでは、Tabumaru が扱う情報と、その扱い方を説明します。</p>
+
+<h2>まとめ</h2>
+<ul>
+  <li>Tabumaru は、利用者のデータを<strong>収集・送信・販売・共有しません</strong>。</li>
+  <li>すべての処理はブラウザの中で行われます。Tabumaru はサーバーを持たず、アクセス解析や広告も使わず、拡張機能の外からプログラムを読み込むこともありません。</li>
+</ul>
+
+<h2>端末の中で使う情報</h2>
+<ul>
+  <li><strong>開いているタブとタブグループ</strong>（タイトル・URL・サイトのアイコン・グループの名前と色）は、Chrome の拡張機能用の仕組みを通して読み取り、一覧・検索・切り替え・移動・閉じる・スヌーズ・スリープの機能を使うときにだけ使います。保存も送信もしません。</li>
+  <li><strong>設定</strong>（言語・テーマ・自動スリープとスクリーンショットプレビューの設定）は、端末の中の Chrome の拡張機能用ストレージに保存します。</li>
+  <li><strong>スヌーズ</strong>：タブをスヌーズすると、そのタブのタイトル・URL・開き直す時刻を、端末の中の拡張機能用ストレージに保存します。タブが開き直されるか、スヌーズを取り消すと消えます。</li>
+  <li><strong>自動スリープ</strong>：しばらく使っていないタブを見分けるため、各タブを最後に使った時刻を Chrome のセッション用ストレージに記録します。Chrome を閉じると消えます。</li>
+  <li><strong>スクリーンショットプレビュー（オプション・初期設定はオフ）</strong>：オンにすると、一覧でタブにマウスを乗せたときに表示するため、表示中のタブの小さなスクリーンショットを撮ります。この画像は端末の中の Chrome のセッション用ストレージにだけ置かれ、タブを閉じたときや Chrome を閉じたときに消え、端末の外に出ることはありません。Tabumaru がページの内容を読んだり書き換えたりすることはありません。</li>
+</ul>
+
+<h2>権限</h2>
+<table>
+  <tr><th>権限</th><th>使う理由</th></tr>
+  <tr><td><code>tabs</code>・<code>tabGroups</code>・<code>favicon</code></td><td>タブとタブグループをサイトのアイコン付きで一覧し、利用者の操作に応じて切り替え・移動・閉じる・スヌーズ・スリープを行うため。</td></tr>
+  <tr><td><code>storage</code></td><td>設定とスヌーズ中のタブを端末に保存するため。</td></tr>
+  <tr><td><code>sidePanel</code></td><td>Chrome のサイドパネルにタブの一覧を表示するため。</td></tr>
+  <tr><td><code>alarms</code></td><td>スヌーズしたタブを開き直す時刻が来たか、また（自動スリープがオンのときだけ）スリープさせるタブがあるかを、1分ごとに確かめるため。</td></tr>
+  <tr><td><code>contextMenus</code></td><td>右クリックメニューに「Tabumaruを開く」を加えるため。</td></tr>
+  <tr><td>すべてのサイトへのアクセス（任意）</td><td>スクリーンショットプレビューをオンにしたときだけ求め、上のサムネイルを撮るためだけに使います。機能をオフにすると権限も手放します。</td></tr>
+</table>
+
+<h2>データの削除</h2>
+<p>スヌーズの取り消しや機能のオフは、いつでもできます。Chrome から Tabumaru を削除すると、Tabumaru が保存したデータはすべて消えます。</p>
+
+<h2>このポリシーの変更</h2>
+<p>内容を変更した場合は、このページに新しい版を掲載し、最終更新日を更新します。</p>
+</section>
+</main>
+</body>
+</html>
